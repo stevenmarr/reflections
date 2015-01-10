@@ -1,4 +1,21 @@
 What happens when you initialize a repository?
 Why do you need to do it?
 
-a .git folder is greated.  To begin the version control process.
+a .git folder is created.  To begin the version control process.
+
+How is the staging area different from the working
+directory and the repository?
+
+What value do you think it offers?
+
+Staging area contains files to be part of the next commit, the
+working directory is just the files in the directory.
+
+The staging area allows the user to specify which files they want
+version tracked.
+
+How can you use the staging area to make sure you have one commit
+per logical change?
+
+By running git diff --staging you can verify the amount of change in a 
+file ready for commit.
