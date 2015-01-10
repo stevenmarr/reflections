@@ -17,5 +17,26 @@ version tracked.
 How can you use the staging area to make sure you have one commit
 per logical change?
 
-By running git diff --staging you can verify the amount of change in a 
+By running git diff --staging you can verify the amount of change in a
 file ready for commit.
+
+
+How do the diagrams help you visualize the branch structure?
+By giving a photographic representation of how the different
+commits are tied together.
+
+What is the result of merging two branches together? Why do we represent
+it in the diagram the way we do?
+
+The result is a code combination where parent elements that remain in
+both are kept, parent elements only kept in one are removed and new elements
+are added.  The diagraming used keeps in mind that the merge shares the commits
+along both branches in existence before the merge.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Git is using a basic logic principle to decide when differences between two segments
+of code should or shouldn't be applied to the final versions, I really only
+see the pro side since it would be exceedingly difficult to write a program
+that could make intelligent decisions on which code to and not to incorporate.
